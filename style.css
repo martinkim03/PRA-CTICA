@@ -1,5 +1,3 @@
-/* Tamaño mobile */
-
 @media only screen and (max-width: 1220px) {
     /* Header */
     #header {
@@ -160,11 +158,11 @@
     }
     img {
       max-width: 100%;
-      object-fit: cover;
+      object-fit: contain;
       max-height: 15em;
     }
     .container {
-      padding-top: 1.5em;
+      padding-top: 1em;
       color: #333;
     }
     .container h5 {
@@ -176,8 +174,8 @@
     @media screen and (max-width: 720px) {
       img {
         max-width: 100%;
-        object-fit: cover;
-        height: 12em;
+        object-fit: contain;
+        height: 10em;
       }
       .card {
         max-width: 10em;
@@ -186,25 +184,25 @@
         border-radius: 5px;
       }
       #products {
-        grid-template-columns: auto ;
+        grid-template-columns: auto auto ;
         grid-column-gap: 1em;
         padding: 1em 0;
       }
     }
     
-    /*DEJE ACA*/
     .intro {
-      background-image: url("21960.jpg");
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 60vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #ffffff;
+        background-image: url("https://media.revistagq.com/photos/5dea0073b1280d00088d8fb7/16:9/w_1280,c_limit/Dior-Air-Jordan-1-Release-sneakers.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
     }
+
     
     .intro p {
       font-size: 2rem;
@@ -597,4 +595,4 @@
       bottom: 0%;
       display: flex;
       justify-content: space-between;
-    }
+    }}

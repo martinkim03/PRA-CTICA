@@ -3,8 +3,49 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filtro de zapatillas y busqueda</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&italic&display=swap"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./IMAGENES/SneakerHub.png">
 </head>
 <body>
-    
+    <header>
+        <div id="header">
+            <a href="index.html" class="logo">
+                <img id="logoimg" src="./IMAGENES/SneakerHub.png" alt="Sneaker Store">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="na">Inicio</a></li>
+                    <li><a href="#opiniones"class="na">Clientes</a></li>
+                    <li><a href="https://wa.me/+5491150968469" class="na">Contacto</a></li>
+                    <li><a href="busqueda.html" class=""boton-encontra>Encuentra tus zapatillas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div id="search-container">
+            <input type="search"
+            id="search-input"
+            placeholder="Encontra tu sneaker ideal..."
+            />
+            <button id="search">Buscar</button>
+        </div>
+        <div id = "buttons">
+            <button class="button-value" 
+            onclick="filterProduct('Todos')">Todos</button>>
+            <button class="button-value" 
+            onclick="filterProduct('AirJordan')">AirJordan</button>
+            <button class ="button-value" 
+            onclick="filterProduct('Nike')">Nike</button>
+            <button class="button-value" 
+            onclick="filterProduct('Yeezy')">Yeezy</button>
+            <button class="button-value" 
+            onclick="filterProduct('Otros')">Otros</button>
+        </div>
+        <div id="products"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
